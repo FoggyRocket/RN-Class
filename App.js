@@ -23,13 +23,14 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import RootRoutes from './app/navigation/RootRoutes';
 import TodoDemo from './app/views/todoDemo';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <TodoDemo />
+      <RootRoutes/>
     </>
   );
 };
